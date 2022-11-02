@@ -13,13 +13,15 @@ class Budget():
         return amount 
 
 food = Budget(500)
-print(food)
-food.withdraw(50)
-print(food)
-food.deposit(50)
-print(food)
-
 with open("food.txt", "w") as f:
     f.write(str(food.balance))
+
+bill = Budget(200)
+with open("bills.txt", "w") as f:
+    f.write(str(bill.balance))
+
+
+
+
 
 
